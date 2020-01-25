@@ -1,0 +1,13 @@
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\bin\Debug\TabMenu.dll
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\bin\Debug\TabMenu.pdb
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu_MarkupCompile.cache
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu_MarkupCompile.lref
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\Themes\Generic.baml
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.g.resources
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.Properties.Resources.resources
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.csproj.GenerateResource.cache
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.csproj.CoreCompileInputs.cache
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.dll
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.pdb
+C:\Users\IM\Desktop\ToolsLibrary\TabMenu\obj\Debug\TabMenu.csprojAssemblyReference.cache

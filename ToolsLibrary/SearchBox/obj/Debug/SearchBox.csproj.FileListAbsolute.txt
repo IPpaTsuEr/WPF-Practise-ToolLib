@@ -1,0 +1,13 @@
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\bin\Debug\SearchBox.dll
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\bin\Debug\SearchBox.pdb
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.csprojAssemblyReference.cache
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox_MarkupCompile.cache
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox_MarkupCompile.lref
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\Themes\Generic.baml
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.g.resources
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.Properties.Resources.resources
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.csproj.GenerateResource.cache
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.csproj.CoreCompileInputs.cache
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.dll
+C:\Users\IM\Desktop\ToolsLibrary\SearchBox\obj\Debug\SearchBox.pdb

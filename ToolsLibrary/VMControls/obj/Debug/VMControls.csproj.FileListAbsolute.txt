@@ -1,0 +1,13 @@
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\bin\Debug\VMControls.dll
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\bin\Debug\VMControls.pdb
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.csprojAssemblyReference.cache
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls_MarkupCompile.cache
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls_MarkupCompile.lref
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\Themes\Generic.baml
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.g.resources
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.Properties.Resources.resources
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.csproj.GenerateResource.cache
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.csproj.CoreCompileInputs.cache
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.dll
+C:\Users\IM\Desktop\ToolsLibrary\VMControls\obj\Debug\VMControls.pdb

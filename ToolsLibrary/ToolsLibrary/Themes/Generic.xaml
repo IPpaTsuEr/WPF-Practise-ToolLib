@@ -1,0 +1,249 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FrameLessWindow"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+    >
+
+    <Style x:Key="WindowButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border Name="Outer" 
+                            Background="{TemplateBinding Background}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            >
+                        <Grid >
+                            <TextBlock Text="{TemplateBinding Button.Content}"
+                                       FontFamily="{TemplateBinding Button.FontFamily}"
+                                       FontSize="{TemplateBinding FontSize}"
+                                       Foreground="{TemplateBinding Foreground}"
+                                       TextAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Stretch"
+                                       Width="{TemplateBinding Width}"
+                                       Height="{TemplateBinding Height}"
+                                       ></TextBlock>
+                            <ContentPresenter></ContentPresenter>
+                        </Grid>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Outer" Property="Background" Value="#99474747"></Setter>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="WindowCloseButton" TargetType="Button" BasedOn="{StaticResource WindowButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border Name="Outer" 
+                            Background="{TemplateBinding Background}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            >
+                        <Grid >
+                            <TextBlock Text="{TemplateBinding Button.Content}"
+                                       FontFamily="{TemplateBinding Button.FontFamily}"
+                                       FontSize="{TemplateBinding FontSize}"
+                                       Foreground="{TemplateBinding Foreground}"
+                                       TextAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Stretch"
+                                       Width="{TemplateBinding Width}"
+                                       Height="{TemplateBinding Height}"
+                                       ></TextBlock>
+                            <ContentPresenter></ContentPresenter>
+                        </Grid>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Outer" Property="Background" Value="Red"></Setter>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style TargetType="{x:Type local:FrameLessWindow}">
+        <Setter Property="WindowStyle" Value="None"></Setter>
+        <Setter Property="AllowsTransparency" Value="True"></Setter>
+        <Setter Property="Background" Value="#FF1E1E1E"></Setter>
+        <Setter Property="BorderBrush" Value="OrangeRed"></Setter>
+        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="Padding" Value="6"></Setter>
+        <Setter Property="ShadowColor" Value="Red"></Setter>
+        <Setter Property="ShadowSize" Value="6"></Setter>
+        <Setter Property="ShadowOpacity" Value="0.9"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:FrameLessWindow}">
+                    <Grid Margin="{TemplateBinding Padding}">
+                        <Border Name="PART_Shadow_Border"
+                        Background="{TemplateBinding Background}"
+                        Padding="{TemplateBinding Margin}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid Background="Transparent">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{TemplateBinding TitleBarHeight}"/>
+                                    <RowDefinition Height="{TemplateBinding ToolBarHeight}"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="{TemplateBinding StateBarHeight}"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Name="TitleBar">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <ContentPresenter Grid.Column="0" Content="{TemplateBinding TitleBarContext}"
+                                                      TextElement.Foreground="{TemplateBinding Foreground}" 
+                                                      ></ContentPresenter>
+
+                                    <ContentPresenter Grid.Column="2" Content="{TemplateBinding TitleBarExContent}"
+                                                      HorizontalAlignment="Stretch">
+                                        
+                                    </ContentPresenter>
+
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="3" >
+                                        <Button Style="{StaticResource WindowButton}" Width="30" 
+                                                Content="_" >
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="Click">
+                                                    <i:InvokeCommandAction Command="{Binding MiniCommand}" CommandParameter="Mini"></i:InvokeCommandAction>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </Button>
+                                        <Button Style="{StaticResource WindowButton}" Width="30" Name="Full_Button"
+                                                Content="口" >
+                                                <!--Command="{Binding DataContext.Command, RelativeSource={RelativeSource AncestorType=Window}}" CommandParameter=""-->
+                                               
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="Click">
+                                                    <i:InvokeCommandAction Command="{Binding FullCommand}"  CommandParameter="Full"></i:InvokeCommandAction>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </Button>
+                                        <Button Style="{StaticResource WindowCloseButton}" Width="30" 
+                                                Content="X" >
+                                            <!--<i:Interaction.Behaviors>
+                                                <ei:MouseDragElementBehavior/>
+                                            </i:Interaction.Behaviors>-->
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="Click">
+                                                    <i:InvokeCommandAction Command="{Binding CloseCommand}"  CommandParameter="Close"></i:InvokeCommandAction>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </Button>
+                                        
+                                    </StackPanel>
+
+                                </Grid>
+                                
+                                <ContentPresenter Grid.Row="1" Content="{TemplateBinding ToolBarExContent}"></ContentPresenter>
+
+                                <ContentPresenter Grid.Row="2" ClipToBounds="True"/>
+
+                                <ContentPresenter Grid.Row="3" Content="{TemplateBinding StateBarExContent}"></ContentPresenter>
+
+                            </Grid>
+                            
+                            <Border.Effect>
+                                <DropShadowEffect
+                                    BlurRadius="{Binding ShadowSize,RelativeSource={RelativeSource Mode=TemplatedParent},UpdateSourceTrigger=PropertyChanged}"
+                                    Opacity=   "{Binding ShadowOpacity,RelativeSource={RelativeSource Mode=TemplatedParent},UpdateSourceTrigger=PropertyChanged}"
+                                    Color=     "{Binding ShadowColor,Mode=TwoWay}"
+                                    ShadowDepth="0"
+                                    Direction="0" 
+                                ></DropShadowEffect>
+                            </Border.Effect>
+
+                        </Border>
+                    </Grid>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Window.ResizeMode" Value="NoResize">
+                            <Setter Property="Visibility" Value="Collapsed" TargetName="Full_Button"></Setter>
+                        </Trigger>
+                        
+                        <Trigger Property="DynamicBorderColor" Value="true">
+                            <Setter Property="BorderBrush" TargetName="PART_Shadow_Border">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" Opacity="0.8">
+                                        <GradientStopCollection>
+                                            <GradientStop Color="Red" Offset="0"></GradientStop>
+                                            <GradientStop Color="Blue" Offset="0.5"></GradientStop>
+                                            <GradientStop Color="Yellow" Offset="1"></GradientStop>
+                                        </GradientStopCollection>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Name="BorderAnim">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="PART_Shadow_Border"
+                                            Storyboard.TargetProperty="(Effect).Color" 
+                                            BeginTime="00:00:00" Duration="00:00:10"
+                                            From="Gray" To="Black" AutoReverse="True"
+                                            RepeatBehavior="Forever" >
+                                        </ColorAnimation>
+                                        <ColorAnimation Storyboard.TargetName="PART_Shadow_Border"
+                                            Storyboard.TargetProperty="BorderBrush.(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" 
+                                            BeginTime="00:00:00" Duration="00:00:10"
+                                            From="Red" To="Green" AutoReverse="True"
+                                            RepeatBehavior="Forever"
+                                            ></ColorAnimation>
+                                        <ColorAnimation Storyboard.TargetName="PART_Shadow_Border"
+                                            Storyboard.TargetProperty="BorderBrush.(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" 
+                                            BeginTime="00:00:00" Duration="00:00:10"
+                                            From="Green" To="Blue" AutoReverse="True"
+                                            RepeatBehavior="Forever"
+                                            ></ColorAnimation>
+                                        <ColorAnimation Storyboard.TargetName="PART_Shadow_Border"
+                                            Storyboard.TargetProperty="BorderBrush.(LinearGradientBrush.GradientStops)[2].(GradientStop.Color)" 
+                                            BeginTime="00:00:00" Duration="00:00:10"
+                                            From="Blue" To="Red" AutoReverse="True"
+                                            RepeatBehavior="Forever"
+                                            ></ColorAnimation>
+                                        <ThicknessAnimation Storyboard.TargetName="PART_Shadow_Border"
+                                                         Storyboard.TargetProperty="BorderThickness"
+                                                         BeginTime="00:00:00" Duration="00:00:1"
+                                                         From="1" To="1" AutoReverse="false"
+                                            ></ThicknessAnimation>
+
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <RemoveStoryboard BeginStoryboardName="BorderAnim"></RemoveStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

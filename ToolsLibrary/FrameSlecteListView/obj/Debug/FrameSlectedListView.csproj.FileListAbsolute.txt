@@ -1,0 +1,13 @@
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlectedListView.csprojAssemblyReference.cache
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlecteListView_MarkupCompile.cache
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlecteListView_MarkupCompile.lref
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlecteListView.dll
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlecteListView.pdb
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\bin\Debug\FrameSlecteListView.dll
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\bin\Debug\FrameSlecteListView.pdb
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\Themes\Generic.baml
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlecteListView.g.resources
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlectedListView.csproj.GenerateResource.cache
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlectedListView.csproj.CoreCompileInputs.cache
+C:\Users\IM\Desktop\ToolsLibrary\FrameSlecteListView\obj\Debug\FrameSlecteListView.Properties.Resources.resources

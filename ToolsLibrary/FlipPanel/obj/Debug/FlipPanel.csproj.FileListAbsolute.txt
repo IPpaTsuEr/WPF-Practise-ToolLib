@@ -1,0 +1,12 @@
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\bin\Debug\FlipPanel.dll
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\bin\Debug\FlipPanel.pdb
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel_MarkupCompile.cache
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel_MarkupCompile.lref
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\Themes\Generic.baml
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel.g.resources
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel.csproj.GenerateResource.cache
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel.csproj.CoreCompileInputs.cache
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel.dll
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\FlipPanel.pdb
+C:\Users\IM\Desktop\ToolsLibrary\FlipPanel\obj\Debug\ToolsLibrary.Properties.Resources.resources

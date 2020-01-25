@@ -1,0 +1,16 @@
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\bin\Debug\UserSearchBox.dll
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\bin\Debug\UserSearchBox.pdb
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.csprojAssemblyReference.cache
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox_MarkupCompile.cache
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox_MarkupCompile.lref
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.g.resources
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.Properties.Resources.resources
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.csproj.GenerateResource.cache
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.csproj.CoreCompileInputs.cache
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.dll
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.pdb
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.g.cs
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.baml
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\bin\Debug\FlipPanel.dll
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\bin\Debug\FlipPanel.pdb
+C:\Users\IM\Desktop\ToolsLibrary\UserSearchBox\obj\Debug\UserSearchBox.csproj.CopyComplete

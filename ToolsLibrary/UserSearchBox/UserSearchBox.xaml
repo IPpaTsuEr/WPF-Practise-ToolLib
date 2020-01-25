@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="UserSearchBox.UserSearchBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UserSearchBox"
+             xmlns:fp="clr-namespace:ToolsLibrary;assembly=FlipPanel"
+             mc:Ignorable="d" 
+             d:DesignHeight="260" d:DesignWidth="260">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <TextBox Height="34">
+            <TextBox.Template>
+                <ControlTemplate>
+                    <Grid Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.ColumnSpan="3" 
+                                CornerRadius="10"
+                                Background="White" 
+                                ></Border>
+                        <TextBox Grid.Column="1" 
+                                 BorderThickness="0" 
+                                 Background="Yellow" 
+                                 TextAlignment="Left" 
+                                 VerticalAlignment="Center" >dfggjkjl</TextBox>
+                        <Border Grid.Column="2"  Name="Out_Border" CornerRadius="10" Background="Red" ></Border>
+                        <Button Grid.Column="2" Width="24" Background="Transparent" BorderThickness="0" Content="O" Margin="0" Padding="0">
+                            <Button.OpacityMask>
+                                <VisualBrush Visual="{Binding ElementName=Out_Border}" Stretch="None" />
+                            </Button.OpacityMask>
+                        </Button>
+                    </Grid>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <fp:FlipPanel  Background="Azure" Grid.Row="1">
+            <fp:FlipPanel.FontContent>
+                <Button Height="32" Width="64"></Button>
+            </fp:FlipPanel.FontContent>
+            <fp:FlipPanel.BackContent>
+                <Button Height="32" Width="64"></Button>
+            </fp:FlipPanel.BackContent>
+        </fp:FlipPanel>
+        
+    </Grid>
+</UserControl>
